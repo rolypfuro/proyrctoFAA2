@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+a{
+    text-decoration: none;
+    
+}
+.margenes-internos{
+    padding: 0px 50px;
+}
+.contenedor-padre{
+   display: flex;
+   flex-flow: column nowrap;
+}
+   .cabecera{
+         background:url(../images/niños.jpg);
+         background-position: center;
+         background-size: cover;
+         background-attachment: contain;
+         display: flex;
+         margin-bottom: 5px;
+         flex-flow: column nowrap;
+    }
+         .menu{
+            background: rgba(0, 0, 0, 0.3);
+            display: flex;
+            height: 100px;
+            flex-flow: row nowrap;
+            align-items: center;
+            
+            
+         }
+            .logo{
+                
+                flex: 1 1 auto;
+                font-family: 'Courier New', Courier, monospace;
+            }
+               .logo a{
+                color: white;
+                font-size: 30px;
+
+               }
+               .logo a:hover{
+                color: #000;
+               }
+            .nav{
+               
+                flex: 5 1 auto;
+            }
+               .nav a{
+                color: #000;
+                font-size: 13;
+                text-transform: uppercase;
+                padding: 0 30px;
+               }
+               .nav a:hover{
+                color: white;
+
+               }
+            .rsocial{
+                
+                flex: 1 1 auto;
+            }
+        .texto-prin{
+            text-align: center;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+        }  
+        h1{
+            text-transform: uppercase;
+        }
+        h3{
+            font-size: 20;
+
+        }
+    .seccion{
+        background: rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-flow: row nowrap;
+
+
+    }
+       .articulos{
+        /* background: blueviolet; */
+        flex:  1 1 auto;
+        font-size: 13px;
+        letter-spacing: 1px;
+
+        display: flex;
+        flex-flow: row wrap;
+
+       }
+       .articulos a{
+        color: #000;
+        font-size: 13px;
+        padding: 10px;
+        background:rgb(71, 173, 242);
+        margin: 20px 0;
+        display: inline-block;
+        text-transform: uppercase;
+       }
+          .articulos a:hover{
+            background: #000;
+            color: aliceblue;
+          }
+       h3{
+        padding: 10px 0;
+       }
+       h2{
+        font-size: 25px;
+        text-transform: uppercase;
+        font-family: 'Courier New', Courier, monospace;
+
+       }
+       p{
+        font-family: 'Courier New', Courier, monospace;
+       }
+          .son-articulo{
+            background: rgb(71, 173, 242);
+            flex: 1 1 40%;
+            padding: 5px;
+          }
+                .son-articulo img{
+                    width: 80%;
+                    
+                }
+        .aside{
+            background: darkgoldenrod;
+            flex: 1 1 auto;
+        }  
+                .aside img{
+                    width: 100%;
+                }
+                h4{
+                    background: black;
+                    color: white;
+                    text-transform: uppercase;
+                }
+          .publicidad{
+            font-family: 'Courier New', Courier, monospace;
+          }
+               
+    .pie-pag{
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+       .pie{
+        background: rgb(133, 182, 200);
+        font-family: 'Courier New', Courier, monospace;
+        
+       }
+       .pie a{
+        color: #000;
+        font-size: 25px;
+       }
+
+@media all and(max-width:800px){
+    .seccion{
+        flex-direction: column;
+        height: auto;
+
+
+    }
+    .logo{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        flex-direction: column;
+        height: auto;
+    }
+}
+@MEDIA all and(max-width:600px){
+    .articulos{
+        flex-direction: column;
+        height: auto;
+
+    }
+}
